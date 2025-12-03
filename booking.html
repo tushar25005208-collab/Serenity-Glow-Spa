@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Booking | Serenity Glow Spa</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", Arial, sans-serif; background: #f8f5f7; color: #333; }
+
+    header {
+      background: linear-gradient(135deg, #f78fb3, #f5cd79);
+      color: #fff;
+      padding: 35px 0 40px;
+      text-align: center;
+    }
+    nav {
+      background: #2c2c54;
+      padding: 12px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 600;
+      font-size: 0.98rem;
+    }
+    nav a:hover { color: #f5cd79; }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto 50px;
+      padding: 0 16px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #2c2c54;
+    }
+    .booking-container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .booking-text {
+      flex: 1 1 260px;
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
+    form {
+      flex: 1 1 320px;
+      background: #fff;
+      padding: 20px 18px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+    label {
+      display: block;
+      margin: 10px 0 4px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px 9px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 0.95rem;
+    }
+    textarea { min-height: 70px; resize: vertical; }
+
+    button {
+      margin-top: 12px;
+      background: #f78fb3;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover { background: #f368e0; }
+
+    footer {
+      background: #2c2c54;
+      color: #fff;
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .booking-container { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Online Booking</h1>
+  <p>Reserve your spa experience in just a few clicks.</p>
+</header>
+
+<nav>
+  <a href="index.html">Services</a>
+  <a href="booking.html">Online Booking</a>
+  <a href="gallery.html">Before &amp; After</a>
+</nav>
+
+<main>
+  <div class="booking-container">
+    <div class="booking-text">
+      <h2>Request an Appointment</h2>
+      <p>Choose your preferred service, date, and time, and our team will confirm your appointment via call or WhatsApp.</p>
+      <p>For urgent or same-day bookings, please contact us directly at <strong>+91-98765 43210</strong>.</p>
+    </div>
+
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="+91-">
+
+      <label for="service-select">Select Service</label>
+      <select id="service-select">
+        <option>Signature Facial</option>
+        <option>Aromatherapy Massage</option>
+        <option>Bridal Glow Package</option>
+        <option>Hair Spa &amp; Styling</option>
+        <option>Manicure &amp; Pedicure</option>
+        <option>Detox Body Wrap</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date">
+
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time">
+
+      <label for="note">Special Requests</label>
+      <textarea id="note" placeholder="Mention any skin concerns or preferences"></textarea>
+
+      <button type="submit">Request Appointment</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  &copy; Serenity Glow Spa &middot; We will get back to you within business hours.
+</footer>
+</body>
+</html>

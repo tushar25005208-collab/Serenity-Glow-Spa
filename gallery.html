@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Before & After | Serenity Glow Spa</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", Arial, sans-serif; background: #f8f5f7; color: #333; }
+
+    header {
+      background: linear-gradient(135deg, #f78fb3, #f5cd79);
+      color: #fff;
+      padding: 35px 0 40px;
+      text-align: center;
+    }
+    nav {
+      background: #2c2c54;
+      padding: 12px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 600;
+      font-size: 0.98rem;
+    }
+    nav a:hover { color: #f5cd79; }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto 50px;
+      padding: 0 16px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #2c2c54;
+    }
+    p.description {
+      margin-bottom: 18px;
+      font-size: 0.98rem;
+    }
+
+    .gallery-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 50px; justify-content: center;
+    }
+    .gallery-item {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+    
+    .gallery-caption {
+      padding: 10px 12px;
+      font-size: 150%;
+      font-family: cursive;
+      text-align: center;
+      background: #f7f1f6;
+    }
+
+    footer {
+      background: #2c2c54;
+      color: #fff;
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .pair { flex-direction: column; }
+      .pair img { width: 100%; height: 190px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Before &amp; After Gallery</h1>
+  <p>Real results from our happy clients.</p>
+</header>
+
+<nav>
+  <a href="index.html">Services</a>
+  <a href="booking.html">Online Booking</a>
+  <a href="gallery.html">Before &amp; After</a>
+</nav>
+
+<main>
+  <h2 style="font-family:Georgia, 'Times New Roman', Times, serif; font-size: xxx-large; font-palette: ;">Transformations</h2>
+  <p class="description">Each look is achieved by our professional therapists and stylists, tailored to the client’s needs.</p>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      
+        <img src="baglow.webp" alt="Before Facial Treatment" width="100%" height="190px">
+        
+      <div class="gallery-caption">Brightening facial – from dull to glowing skin.</div>
+    </div>
+
+    <div class="gallery-item">
+      
+        <img src="hairba.jpg" alt="Before Hair Spa Treatment" width="100%" height="190px">
+       
+      <div class="gallery-caption">Hair spa &amp; styling – frizzy to smooth and sleek.</div>
+    </div>
+
+    <div class="gallery-item">
+      
+        <img src="bridalba.jpg" alt="Before Bridal Makeover" width="100%" height="190px">
+       
+      <div class="gallery-caption">Bridal makeover – elegant, camera-ready finish.</div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="nailba.webp" alt="Before Spa Manicure" width="100%" height="190px">
+      <div class="gallery-caption">Spa manicure – neat, polished, and stylish nails.</div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; Serenity Glow Spa &middot; See more transformations at our studio.
+</footer>
+</body>
+</html>
